@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	background: $brand-white;
+  color: $brand-black;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+  margin: auto;
+  justify-content: space-around;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border: 1px solid $brand-black;
+}
