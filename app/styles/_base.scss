@@ -15,8 +15,8 @@ body {
 .main {
   display: flex;
   width: 100%;
-  height: calc(100vh - 100px);
-  margin: auto;
+  height: calc(100vh - 150px);
+  padding: 50px;
   justify-content: space-around;
 }
 
@@ -26,5 +26,23 @@ body {
   align-items: center;
   justify-content: center;
   flex: 1;
-  border: 1px solid $brand-black;
+}
+
+.right {
+  background: url('../bulb.png') no-repeat center center;
+  background-size: cover;
+}
+
+.heading,
+.sub-heading {
+  font-family: 'VT323', monospace;
+}
+
+.heading {
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+
+.sub-heading {
+  font-size: 2rem;
 }
