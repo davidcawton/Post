@@ -1,3 +1,10 @@
 <div class="panel work">
   <h1 class="panel-title">Work</h1>
+
+<div class="panel-photos">
+  {{#each model as |photo|}}
+  <img class="panel-photo" src={{photo.thumbUrl}} alt="">
+  {{/each}}
+</div>
+
 </div>
