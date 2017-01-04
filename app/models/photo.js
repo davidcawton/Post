@@ -1,4 +1,4 @@
-import DS from 'ember-data';
+import Ember from 'ember';
 
 const { computed } = Ember;
 
@@ -8,7 +8,7 @@ export default Ember.Object.extend({
   }),
 
   largeUrl: computed('id', function() {
-    return `../${this.get('id')}--large.jpg`;
+    return `../../../image${this.get('id')}-large.jpg`;
   }),
 
   name: computed('id', function() {

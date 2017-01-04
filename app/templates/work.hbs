@@ -10,10 +10,14 @@
 
   <div class="panel-thumbnails">
     {{#each model as |photo|}}
-      <div class="thumbnail">
-        <img src= {{photo.thumbUrl}} alt="pictures" class= {{if showLargeThumbnails 'large-photo' 'small-photo'}}> {{photo.name}}
-      </div>
+
+      {{#link-to 'work.photo' photo class='thumbnail' }}
+        <img src= {{photo.thumbUrl}} class= {{if showLargeThumbnails 'large-thumb' 'small-thumb'}}>
+        {{photo.name}}
+      {{/link-to}}
+
     {{/each}}
   </div>
+  {{outlet}}
 
 </div>
