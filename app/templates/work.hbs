@@ -1,10 +1,19 @@
 <div class="panel work">
   <h1 class="panel-title">Work</h1>
 
-<div class="panel-photos">
-  {{#each model as |photo|}}
-  <img class="panel-photo" src={{photo.thumbUrl}} alt="">
-  {{/each}}
-</div>
+  <p>
+    <label>
+    {{input type='checkbox' checked=showLargeThumbnails}}
+    Large Thumbnails
+  </label>
+  </p>
+
+  <div class="panel-thumbnails">
+    {{#each model as |photo|}}
+      <div class="thumbnail">
+        <img src= {{photo.thumbUrl}} alt="pictures" class= {{if showLargeThumbnails 'large-photo' 'small-photo'}}> {{photo.name}}
+      </div>
+    {{/each}}
+  </div>
 
 </div>

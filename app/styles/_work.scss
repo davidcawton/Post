@@ -8,7 +8,23 @@
   background: $brand-white;
 }
 
-.panel-photo {
+.thumbnail {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.thumbnail img {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.large-photo {
+  width: 200px;
+}
+
+.small-photo {
   width: 100px;
-  height: 100px;
 }
