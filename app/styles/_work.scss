@@ -5,15 +5,26 @@
   justify-content: center;
   margin: auto;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: $brand-white;
+  font-family: 'VT323', monospace;
+}
+
+.panel-title {
+  font-size: 5em;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.panel-graph {
+  font-size: 1.5em;
 }
 
 .thumbnail {
   display: inline-block;;
   flex-direction: row;
-  border: 1px solid black;
-  padding: 5px;
+  padding: 0;
+  margin: 0;
   text-align: center;
   font-size: 10px;
 }
@@ -28,7 +39,7 @@
 }
 
 .small-thumb {
-  width: 100px;
+  width: 75px;
 }
 
 .large-photo {

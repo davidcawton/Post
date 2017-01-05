@@ -10,6 +10,8 @@ export default Ember.Route.extend({
       Photo.create({ id: 4 }),
       Photo.create({ id: 5 }),
       Photo.create({ id: 6 }),
+      Photo.create({ id: 7 }),
+      Photo.create({ id: 8 }),
     ];
   },
 });

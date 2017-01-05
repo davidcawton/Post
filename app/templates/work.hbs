@@ -1,5 +1,8 @@
 <div class="panel work">
   <h1 class="panel-title">Work</h1>
+  <p class="panel-graph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
 
   <p>
     <label>
@@ -13,7 +16,6 @@
 
       {{#link-to 'work.photo' photo class='thumbnail' }}
         <img src= {{photo.thumbUrl}} class= {{if showLargeThumbnails 'large-thumb' 'small-thumb'}}>
-        {{photo.name}}
       {{/link-to}}
 
     {{/each}}

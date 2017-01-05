@@ -12,6 +12,6 @@ export default Ember.Object.extend({
   }),
 
   name: computed('id', function() {
-    return `Photo ${this.get('id')}`;
+    return `${this.get('id')}`;
   }),
 });

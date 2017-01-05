@@ -1,0 +1,25 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-family: 'VT323', monospace;
+}
+
+.contact-input {
+  border: 4px solid $brand-secondary;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 5px;
+  font-family: 'VT323', monospace;
+}
+
+.contact-submit {
+  color: $brand-secondary;
+  font-size: 1.5em;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: $brand-secondary;
+  color: $brand-white;
+  font-family: 'VT323', monospace;
+}
