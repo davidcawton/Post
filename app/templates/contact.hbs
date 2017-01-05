@@ -1,10 +1,26 @@
 <div class="panel contact">
   <h1 class="panel-title">Contact</h1>
-  <form action="" class="contact-form">
-      <input type="text" class="contact-input" name="Name" placeholder="Name">
-      <input type="text" class="contact-input" name="Email" placeholder="Email">
-      <input type="text" class="contact-input" name="Phone" placeholder="Phone">
-      <textarea name="description" id="" cols="30" rows="5" class="contact-input contact-text" placeholder="What's Up?"></textarea>
-      <button class="contact-submit">Send</button>
-    </form>
+  <div class="contact-info">
+    <p class="contact-graph">
+      Workspace Portfolio
+    </p>
+    <p class="contact-graph">
+      555 FAKE ST
+      JACKSONVILLE, FL
+      32250
+    </p>
+    <p class="contact-graph">
+      (555) 555.5555
+    </p>
+    <p class="contact-graph">
+      email@email.com
+    </p>
+
+    {{#link-to 'contact.find'}}
+    <p class="contact-graph">Contact us</p>
+    {{/link-to}}
+
+
+  </div>
+  {{outlet}}
 </div>
