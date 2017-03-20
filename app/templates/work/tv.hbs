@@ -1,0 +1,13 @@
+<div class="Broadcasting">
+  <i class="fa fa-close"></i>
+
+  <div class="panel-thumbnails">
+  {{#each model as |photo|}}
+
+    {{#link-to 'work.photo' photo class='thumbnail' }}
+      <img src= {{photo.thumbUrl}} class= {{if showLargeThumbnails 'large-thumb' 'small-thumb'}}>
+    {{/link-to}}
+
+  {{/each}}
+</div>
+</div>

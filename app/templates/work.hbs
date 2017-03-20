@@ -3,23 +3,8 @@
   <p class="panel-graph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </p>
+  {{work-links}}
 
-  <p>
-    <label>
-    {{input type='checkbox' checked=showLargeThumbnails}}
-    Large Thumbnails
-  </label>
-  </p>
-
-  <div class="panel-thumbnails">
-    {{#each model as |photo|}}
-
-      {{#link-to 'work.photo' photo class='thumbnail' }}
-        <img src= {{photo.thumbUrl}} class= {{if showLargeThumbnails 'large-thumb' 'small-thumb'}}>
-      {{/link-to}}
-
-    {{/each}}
-  </div>
   {{outlet}}
 
 </div>

@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('photo', {
       path: '/work/photos/:photo_id'
     });
+    this.route('tv');
   });
 });
 
